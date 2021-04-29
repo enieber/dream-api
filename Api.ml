@@ -32,8 +32,7 @@ let () =
         %3i success(s)!
         %3i failed(s)!" !successful !failed));
 
-    Dream.post "/"
-      (fun _ -> Crate.post);
+    Dream.post "/" Create.post;
 
   ]
   @@ Dream.not_found

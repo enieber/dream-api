@@ -8,8 +8,7 @@ let to_json request =
       end
       | _ -> Lwt.return None
       
-let post () =
-  (fun request ->
+let post = (fun request ->
     match%lwt to_json request with
     | None -> Dream.empty `Bad_Request
     | Some json ->

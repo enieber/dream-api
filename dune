@@ -1,5 +1,6 @@
 (executable
  (name api)
  (libraries dream)
+ (modules api create)
  (preprocess (pps lwt_ppx)))
 
